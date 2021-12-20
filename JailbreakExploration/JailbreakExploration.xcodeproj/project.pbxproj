@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9DABE36276FEABD0096F4B9 /* JailbreakExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE35276FEABC0096F4B9 /* JailbreakExplorationApp.swift */; };
+		F9DABE38276FEABD0096F4B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE37276FEABD0096F4B9 /* MainView.swift */; };
+		F9DABE3A276FEAC10096F4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DABE39276FEAC10096F4B9 /* Assets.xcassets */; };
+		F9DABE3D276FEAC20096F4B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DABE3C276FEAC10096F4B9 /* Preview Assets.xcassets */; };
+		F9DABE46276FFC410096F4B9 /* NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = F9DABE45276FFC400096F4B9 /* NOTES.md */; };
+		F9DABE49276FFCAC0096F4B9 /* Jailbreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE48276FFCAC0096F4B9 /* Jailbreak.swift */; };
+		F9DABE63277003880096F4B9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE62277003880096F4B9 /* Util.swift */; };
+		F9DABE722770063C0096F4B9 /* cicuta_log.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE642770063B0096F4B9 /* cicuta_log.m */; };
+		F9DABE732770063C0096F4B9 /* cicuta_virosa.c in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE672770063B0096F4B9 /* cicuta_virosa.c */; };
+		F9DABE742770063C0096F4B9 /* voucher_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE682770063B0096F4B9 /* voucher_utils.c */; };
+		F9DABE752770063C0096F4B9 /* descriptors_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE692770063B0096F4B9 /* descriptors_utils.c */; };
+		F9DABE762770063C0096F4B9 /* fake_element_spray.c in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE6A2770063B0096F4B9 /* fake_element_spray.c */; };
+		F9DABE772770063C0096F4B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9DABE6D2770063C0096F4B9 /* README.md */; };
+		F9DABE782770063C0096F4B9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F9DABE6E2770063C0096F4B9 /* LICENSE */; };
+		F9DABE792770063C0096F4B9 /* exploit_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE712770063C0096F4B9 /* exploit_utilities.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9DABE32276FEABC0096F4B9 /* JailbreakExploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JailbreakExploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DABE35276FEABC0096F4B9 /* JailbreakExplorationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakExplorationApp.swift; sourceTree = "<group>"; };
+		F9DABE37276FEABD0096F4B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F9DABE39276FEAC10096F4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9DABE3C276FEAC10096F4B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9DABE3E276FEAC20096F4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9DABE45276FFC400096F4B9 /* NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = NOTES.md; path = ../NOTES.md; sourceTree = "<group>"; };
+		F9DABE48276FFCAC0096F4B9 /* Jailbreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jailbreak.swift; sourceTree = "<group>"; };
+		F9DABE4B276FFEAF0096F4B9 /* JailbreakExploration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JailbreakExploration-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9DABE62277003880096F4B9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F9DABE642770063B0096F4B9 /* cicuta_log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cicuta_log.m; sourceTree = "<group>"; };
+		F9DABE652770063B0096F4B9 /* cicuta_virosa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cicuta_virosa.h; sourceTree = "<group>"; };
+		F9DABE662770063B0096F4B9 /* voucher_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voucher_utils.h; sourceTree = "<group>"; };
+		F9DABE672770063B0096F4B9 /* cicuta_virosa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cicuta_virosa.c; sourceTree = "<group>"; };
+		F9DABE682770063B0096F4B9 /* voucher_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = voucher_utils.c; sourceTree = "<group>"; };
+		F9DABE692770063B0096F4B9 /* descriptors_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = descriptors_utils.c; sourceTree = "<group>"; };
+		F9DABE6A2770063B0096F4B9 /* fake_element_spray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fake_element_spray.c; sourceTree = "<group>"; };
+		F9DABE6B2770063B0096F4B9 /* exploit_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit_utilities.h; sourceTree = "<group>"; };
+		F9DABE6C2770063B0096F4B9 /* cicuta_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cicuta_log.h; sourceTree = "<group>"; };
+		F9DABE6D2770063C0096F4B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F9DABE6E2770063C0096F4B9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F9DABE6F2770063C0096F4B9 /* descriptors_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptors_utils.h; sourceTree = "<group>"; };
+		F9DABE702770063C0096F4B9 /* fake_element_spray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fake_element_spray.h; sourceTree = "<group>"; };
+		F9DABE712770063C0096F4B9 /* exploit_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exploit_utilities.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9DABE2F276FEABC0096F4B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9DABE29276FEABC0096F4B9 = {
+			isa = PBXGroup;
+			children = (
+				F9DABE45276FFC400096F4B9 /* NOTES.md */,
+				F9DABE34276FEABC0096F4B9 /* JailbreakExploration */,
+				F9DABE33276FEABC0096F4B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9DABE33276FEABC0096F4B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9DABE32276FEABC0096F4B9 /* JailbreakExploration.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9DABE34276FEABC0096F4B9 /* JailbreakExploration */ = {
+			isa = PBXGroup;
+			children = (
+				F9DABE47276FFC920096F4B9 /* Jailbreak */,
+				F9DABE35276FEABC0096F4B9 /* JailbreakExplorationApp.swift */,
+				F9DABE37276FEABD0096F4B9 /* MainView.swift */,
+				F9DABE39276FEAC10096F4B9 /* Assets.xcassets */,
+				F9DABE3E276FEAC20096F4B9 /* Info.plist */,
+				F9DABE3B276FEAC10096F4B9 /* Preview Content */,
+				F9DABE62277003880096F4B9 /* Util.swift */,
+			);
+			path = JailbreakExploration;
+			sourceTree = "<group>";
+		};
+		F9DABE3B276FEAC10096F4B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9DABE3C276FEAC10096F4B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9DABE47276FFC920096F4B9 /* Jailbreak */ = {
+			isa = PBXGroup;
+			children = (
+				F9DABE4A276FFE850096F4B9 /* Exploit */,
+				F9DABE48276FFCAC0096F4B9 /* Jailbreak.swift */,
+			);
+			path = Jailbreak;
+			sourceTree = "<group>";
+		};
+		F9DABE4A276FFE850096F4B9 /* Exploit */ = {
+			isa = PBXGroup;
+			children = (
+				F9DABE6C2770063B0096F4B9 /* cicuta_log.h */,
+				F9DABE642770063B0096F4B9 /* cicuta_log.m */,
+				F9DABE672770063B0096F4B9 /* cicuta_virosa.c */,
+				F9DABE652770063B0096F4B9 /* cicuta_virosa.h */,
+				F9DABE692770063B0096F4B9 /* descriptors_utils.c */,
+				F9DABE6F2770063C0096F4B9 /* descriptors_utils.h */,
+				F9DABE712770063C0096F4B9 /* exploit_utilities.c */,
+				F9DABE6B2770063B0096F4B9 /* exploit_utilities.h */,
+				F9DABE6A2770063B0096F4B9 /* fake_element_spray.c */,
+				F9DABE702770063C0096F4B9 /* fake_element_spray.h */,
+				F9DABE6E2770063C0096F4B9 /* LICENSE */,
+				F9DABE6D2770063C0096F4B9 /* README.md */,
+				F9DABE682770063B0096F4B9 /* voucher_utils.c */,
+				F9DABE662770063B0096F4B9 /* voucher_utils.h */,
+				F9DABE4B276FFEAF0096F4B9 /* JailbreakExploration-Bridging-Header.h */,
+			);
+			path = Exploit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9DABE31276FEABC0096F4B9 /* JailbreakExploration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9DABE41276FEAC20096F4B9 /* Build configuration list for PBXNativeTarget "JailbreakExploration" */;
+			buildPhases = (
+				F9DABE2E276FEABC0096F4B9 /* Sources */,
+				F9DABE2F276FEABC0096F4B9 /* Frameworks */,
+				F9DABE30276FEABC0096F4B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JailbreakExploration;
+			productName = JailbreakExploration;
+			productReference = F9DABE32276FEABC0096F4B9 /* JailbreakExploration.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9DABE2A276FEABC0096F4B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F9DABE31276FEABC0096F4B9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = F9DABE2D276FEABC0096F4B9 /* Build configuration list for PBXProject "JailbreakExploration" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9DABE29276FEABC0096F4B9;
+			productRefGroup = F9DABE33276FEABC0096F4B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9DABE31276FEABC0096F4B9 /* JailbreakExploration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9DABE30276FEABC0096F4B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DABE46276FFC410096F4B9 /* NOTES.md in Resources */,
+				F9DABE3D276FEAC20096F4B9 /* Preview Assets.xcassets in Resources */,
+				F9DABE772770063C0096F4B9 /* README.md in Resources */,
+				F9DABE3A276FEAC10096F4B9 /* Assets.xcassets in Resources */,
+				F9DABE782770063C0096F4B9 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9DABE2E276FEABC0096F4B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DABE792770063C0096F4B9 /* exploit_utilities.c in Sources */,
+				F9DABE742770063C0096F4B9 /* voucher_utils.c in Sources */,
+				F9DABE722770063C0096F4B9 /* cicuta_log.m in Sources */,
+				F9DABE49276FFCAC0096F4B9 /* Jailbreak.swift in Sources */,
+				F9DABE38276FEABD0096F4B9 /* MainView.swift in Sources */,
+				F9DABE63277003880096F4B9 /* Util.swift in Sources */,
+				F9DABE732770063C0096F4B9 /* cicuta_virosa.c in Sources */,
+				F9DABE752770063C0096F4B9 /* descriptors_utils.c in Sources */,
+				F9DABE762770063C0096F4B9 /* fake_element_spray.c in Sources */,
+				F9DABE36276FEABD0096F4B9 /* JailbreakExplorationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F9DABE3F276FEAC20096F4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9DABE40276FEAC20096F4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9DABE42276FEAC20096F4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JailbreakExploration/Preview Content\"";
+				DEVELOPMENT_TEAM = 59STWKJQ5H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JailbreakExploration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.beckettobrien.JailbreakExploration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JailbreakExploration/Jailbreak/Exploit/JailbreakExploration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9DABE43276FEAC20096F4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JailbreakExploration/Preview Content\"";
+				DEVELOPMENT_TEAM = 59STWKJQ5H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JailbreakExploration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.beckettobrien.JailbreakExploration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JailbreakExploration/Jailbreak/Exploit/JailbreakExploration-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9DABE2D276FEABC0096F4B9 /* Build configuration list for PBXProject "JailbreakExploration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9DABE3F276FEAC20096F4B9 /* Debug */,
+				F9DABE40276FEAC20096F4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9DABE41276FEAC20096F4B9 /* Build configuration list for PBXNativeTarget "JailbreakExploration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9DABE42276FEAC20096F4B9 /* Debug */,
+				F9DABE43276FEAC20096F4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9DABE2A276FEABC0096F4B9 /* Project object */;
+}
