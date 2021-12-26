@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F95DB40D27708796004C1D00 /* Offsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95DB40C27708796004C1D00 /* Offsets.swift */; };
+		F9D61ABF2771BB1800522361 /* KernRW.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D61ABD2771BB1800522361 /* KernRW.m */; };
+		F9D61AC22773E3E400522361 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D61AC12773E3E400522361 /* IOKit.framework */; };
 		F9DABE36276FEABD0096F4B9 /* JailbreakExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE35276FEABC0096F4B9 /* JailbreakExplorationApp.swift */; };
 		F9DABE38276FEABD0096F4B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DABE37276FEABD0096F4B9 /* MainView.swift */; };
 		F9DABE3A276FEAC10096F4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DABE39276FEAC10096F4B9 /* Assets.xcassets */; };
@@ -25,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F95DB40C27708796004C1D00 /* Offsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offsets.swift; sourceTree = "<group>"; };
+		F9D61ABD2771BB1800522361 /* KernRW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KernRW.m; sourceTree = "<group>"; };
+		F9D61ABE2771BB1800522361 /* KernRW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KernRW.h; sourceTree = "<group>"; };
+		F9D61AC12773E3E400522361 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		F9DABE32276FEABC0096F4B9 /* JailbreakExploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JailbreakExploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DABE35276FEABC0096F4B9 /* JailbreakExplorationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakExplorationApp.swift; sourceTree = "<group>"; };
 		F9DABE37276FEABD0096F4B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -56,18 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D61AC22773E3E400522361 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9D61AC02773E3E400522361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D61AC12773E3E400522361 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9DABE29276FEABC0096F4B9 = {
 			isa = PBXGroup;
 			children = (
 				F9DABE45276FFC400096F4B9 /* NOTES.md */,
 				F9DABE34276FEABC0096F4B9 /* JailbreakExploration */,
 				F9DABE33276FEABC0096F4B9 /* Products */,
+				F9D61AC02773E3E400522361 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +99,7 @@
 		F9DABE34276FEABC0096F4B9 /* JailbreakExploration */ = {
 			isa = PBXGroup;
 			children = (
+				F9DABE4B276FFEAF0096F4B9 /* JailbreakExploration-Bridging-Header.h */,
 				F9DABE47276FFC920096F4B9 /* Jailbreak */,
 				F9DABE35276FEABC0096F4B9 /* JailbreakExplorationApp.swift */,
 				F9DABE37276FEABD0096F4B9 /* MainView.swift */,
@@ -106,6 +124,9 @@
 			children = (
 				F9DABE4A276FFE850096F4B9 /* Exploit */,
 				F9DABE48276FFCAC0096F4B9 /* Jailbreak.swift */,
+				F95DB40C27708796004C1D00 /* Offsets.swift */,
+				F9D61ABD2771BB1800522361 /* KernRW.m */,
+				F9D61ABE2771BB1800522361 /* KernRW.h */,
 			);
 			path = Jailbreak;
 			sourceTree = "<group>";
@@ -127,7 +148,6 @@
 				F9DABE6D2770063C0096F4B9 /* README.md */,
 				F9DABE682770063B0096F4B9 /* voucher_utils.c */,
 				F9DABE662770063B0096F4B9 /* voucher_utils.h */,
-				F9DABE4B276FFEAF0096F4B9 /* JailbreakExploration-Bridging-Header.h */,
 			);
 			path = Exploit;
 			sourceTree = "<group>";
@@ -205,10 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D61ABF2771BB1800522361 /* KernRW.m in Sources */,
 				F9DABE792770063C0096F4B9 /* exploit_utilities.c in Sources */,
 				F9DABE742770063C0096F4B9 /* voucher_utils.c in Sources */,
 				F9DABE722770063C0096F4B9 /* cicuta_log.m in Sources */,
 				F9DABE49276FFCAC0096F4B9 /* Jailbreak.swift in Sources */,
+				F95DB40D27708796004C1D00 /* Offsets.swift in Sources */,
 				F9DABE38276FEABD0096F4B9 /* MainView.swift in Sources */,
 				F9DABE63277003880096F4B9 /* Util.swift in Sources */,
 				F9DABE732770063C0096F4B9 /* cicuta_virosa.c in Sources */,
@@ -355,7 +377,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beckettobrien.JailbreakExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JailbreakExploration/Jailbreak/Exploit/JailbreakExploration-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JailbreakExploration/JailbreakExploration-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beckettobrien.JailbreakExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JailbreakExploration/Jailbreak/Exploit/JailbreakExploration-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JailbreakExploration/JailbreakExploration-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
