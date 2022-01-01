@@ -27,7 +27,6 @@ func jailbreak() -> JAILBREAK_STATUS {
     log("[*] Eploit succeeded");
     log("[+] Building safer R/W primitives...");
     registerForLogs(from: "kernrw_log");
-//    defer { KernRW_deinit() }
     guard KernRW_init(our_proc) else {
         log("[!] Failed to build safer R/W primitives");
         return .KERNRW_ERROR;

